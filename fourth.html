@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thumbnail Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery a img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      transition: border-color 0.3s;
+    }
+    .gallery a img:hover {
+      border-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Thumbnail Image Gallery</h1>
+  <div class="gallery">
+    <a href="images/photo1-large.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="images/photo1-thumb.jpg" alt="Photo 1" />
+    </a>
+    <a href="images/photo2-large.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="images/photo2-thumb.jpg" alt="Photo 2" />
+    </a>
+    <a href="images/photo3-large.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="images/photo3-thumb.jpg" alt="Photo 3" />
+    </a>
+    <a href="images/photo4-large.jpg" target="_blank" rel="noopener noreferrer">
+      <img src="images/photo4-thumb.jpg" alt="Photo 4" />
+    </a>
+    <!-- Add more images as needed -->
+  </div>
+</body>
+</html>
